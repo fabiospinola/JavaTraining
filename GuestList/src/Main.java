@@ -72,6 +72,7 @@ public class Main {
         System.out.println("____________________\n----Remove Guests Menu-----\n");
         System.out.println("Guest's number to remove:");
         int id = scanner.nextInt();
+        
         if (guests[id - 1] != null) {
             guests[id - 1] = null;
         }
