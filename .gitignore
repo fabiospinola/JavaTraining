@@ -5,6 +5,7 @@
 .idea/**/dictionaries
 .idea/**/shelf
 .idea/
+.out/
 *.iml
 *.iws
  
