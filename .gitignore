@@ -4,7 +4,7 @@ idea/**/tasks.xml
 idea/**/usage.statistics.xml
 idea/**/dictionaries
 dea/**/shelf
-idea/
+.idea/
 out/
 *.iml
 *.iws
