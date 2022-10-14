@@ -11,7 +11,10 @@ out/
  
 # Maven
 log/
-target/
+/target/*
+
+#Don't ignore jar
+!/target/my-application-*-standalone.jar
 
 # Ignore Mac system files
 .DS_store
