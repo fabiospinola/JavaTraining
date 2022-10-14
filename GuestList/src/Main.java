@@ -8,11 +8,11 @@ public class Main {
     public static void main(String[] args) {
         addTestGuests();
         do {
-            viewGuests();
+            displayGuests();
             displayMenu();
             switch (getUserOpt()) {
                 case 1:
-                    viewGuests();
+                    displayGuests();
                     break;
                 case 2:
                     addGuests();
@@ -42,7 +42,7 @@ public class Main {
         return opt;
     }
 
-    public static void viewGuests() {
+    public static void displayGuests() {
         boolean isEmpty = true;
         System.out.println("____________________\n----Guest List-----\n");
         for (int i = 0; i < 10; i++) {
@@ -70,9 +70,16 @@ public class Main {
     public static void deleteGuests() {
         String[] temp = new String[guests.length]; //temporary array for rearranging guests
         System.out.println("____________________\n----Remove Guests Menu-----\n");
+
         System.out.println("Guest's number to remove:");
         int id = scanner.nextInt();
-        
+        while(guests[id] == null) {
+            System.out.println("There's no guest with that id.\nProvide a valid one");
+            System.out.println("Guest's number to remove:");
+            id = scanner.nextInt();
+        }
+
+
         if (guests[id - 1] != null) {
             guests[id - 1] = null;
         }
