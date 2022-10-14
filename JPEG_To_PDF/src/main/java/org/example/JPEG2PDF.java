@@ -15,6 +15,7 @@ public class JPEG2PDF {
         File root = new File("images");
         String outputFile = "output.pdf";
         List<String> files = new ArrayList<String>();
+        
         files.add("page1.jpg");
         files.add("page2.jpg");
 
