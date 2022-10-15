@@ -11,8 +11,11 @@ out/
  
 # Maven
 log/
-/target/*
-
+/target/.idea
+/target/classes
+/target/generated-sources
+/target/maven-archiver
+/target/maven-status
 #Don't ignore jar
 !/target/my-application-*-standalone.jar
 
