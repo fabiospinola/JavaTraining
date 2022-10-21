@@ -12,10 +12,11 @@ import java.util.List;
 
 public class JPEG2PDF {
     public static void main(String arg[]) throws Exception {
-        File root = new File("images");
-        String outputFile = "output.pdf";
+        File root = new File("images"); //pasta que contem as imagens para converter
+        String outputFile = "output.pdf"; //ficheiro pdf vai ficar na mesma pasta
         List<String> files = new ArrayList<String>();
 
+        //apenas faz a conversao de 3 imagens, têm de ter estes nomes estar dentro da pasta images
         files.add("page1.jpg");
         files.add("page2.jpg");
         files.add("page3.jpg");
